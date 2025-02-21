@@ -1,10 +1,11 @@
 import DisplayUi from "@/components/DisplayUi";
+import SkeletonCom from "@/components/SkeletonCom";
 import { Suspense } from "react";
 
 const page = () => {
   return (
     <>
-      <Suspense fallback={<div className="">Loding</div>}>
+      <Suspense fallback={<SkeletonCom />}>
         <DisplayUi />
       </Suspense>
     </>
