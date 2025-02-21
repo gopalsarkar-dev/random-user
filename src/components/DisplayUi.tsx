@@ -10,7 +10,12 @@ import {
 import Image from "next/image";
 
 const DisplayUi = async () => {
-  const req = await ky.get("https://randomuser.me/api/?nat=IN").json<any>();
+  const req = await ky
+    .get("https://randomuser.me/api/?nat=IN", {
+      cache: "no-cache",
+      next: { tags: ["randomUser"] },
+    })
+    .json<any>(); // eslint-disable-line
 
   const res = (await req.results[0]) as UserApiType;
 
