@@ -5,7 +5,7 @@ import { Suspense } from "react";
 
 export const generateMetadata = (): Metadata => ({
   title: "Random | Random User",
-  description: "",
+  description: "Random user profile",
 });
 
 const page = () => {
