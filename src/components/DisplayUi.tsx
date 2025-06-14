@@ -21,8 +21,8 @@ const DisplayUi = async () => {
 
   return (
     <>
-      <div className="grid h-[90dvh] place-items-center">
-        <Card className="mx-auto w-[320px] shadow-lg sm:max-w-sm">
+      <div className="grid h-[85dvh] place-items-center">
+        <Card className="shadow-lg sm:max-w-sm">
           <CardHeader className="grid place-items-center">
             <Image
               src={res.picture.large}
