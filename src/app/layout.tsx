@@ -1,6 +1,7 @@
+import ThemeProvider from "@/components/Header/ThemeProvider";
 import TopBar from "@/components/Header/TopBar";
 import "./globals.css";
-import ThemeProvider from "@/components/Header/ThemeProvider";
+import FooterLink from "@/components/Footer/FooterLink";
 
 type RootLayoutProviderProps = {
   children: React.ReactNode;
@@ -17,6 +18,7 @@ const RootLayout = ({ children }: RootLayoutProviderProps) => {
         >
           <TopBar />
           <main>{children}</main>
+          <FooterLink />
         </ThemeProvider>
       </body>
     </html>

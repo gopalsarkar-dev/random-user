@@ -1,5 +1,6 @@
 import { UserApiType } from "@/lib/type";
 import ky from "ky";
+import Image from "next/image";
 import {
   Card,
   CardContent,
@@ -7,7 +8,6 @@ import {
   CardHeader,
   CardTitle,
 } from "./ui/card";
-import Image from "next/image";
 
 const DisplayUi = async () => {
   const req = await ky
